@@ -1,1 +1,126 @@
-Welcome to my site. I am currently migrating to Github Pages - stay tuned!
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="img/ico/favicon.png">
+	<link rel="apple-touch-icon" href="img/ico/apple-touch-icon-144-precomposed.png">
+
+	<title>Home | Matt Mayer</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/bootstrap/sticky-footer.css" rel="stylesheet">
+	<link href="css/bootstrap/navbar-fixed-top.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a data-toggle="tab" class="navbar-brand ajax" href="#home">Matt Mayer</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li id="home" class="tab-element active">
+						<a id="home-link" data-toggle="tab" class="ajax" href="#home">
+							<span class="glyphicon glyphicon-home"></span> Home
+						</a>
+					</li>
+					<li id="about" class="tab-element">
+						<a data-toggle="tab" class="ajax" href="#about">
+							<span class="glyphicon glyphicon-user"></span> Who am I?
+						</a>
+					</li>
+					<li id="projects" class="tab-element">
+						<a data-toggle="tab" class="ajax" href="#projects">
+							<span class="glyphicon glyphicon-tower"></span> Projects
+						</a>
+					</li>
+					<li id="contact" class="tab-element">
+						<a data-toggle="tab" class="ajax" href="#contact">
+							<span class="glyphicon glyphicon-bullhorn"></span> Contact
+						</a>
+					</li>
+					<li id="contact" class="tab-element">
+						<a data-toggle="tab" class="ajax" href="#reflections">
+							<span class="glyphicon glyphicon-pencil"></span> Reflections
+						</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li style="max-height:50px;"><a style="padding-top:0px; padding-left:0px;" href="https://www.facebook.com/matt.mayer.18"><img src="img/BL-socialicons08/48x48-02/facebook-icon.png"/></a></li>
+					<li style="max-height:50px;"><a style="padding-top:0px; padding-left:0px;" href="http://www.linkedin.com/in/matthewsmayer/"><img src="img/BL-socialicons08/48x48-02/linkedin-icon.png"/></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+
+
+	<div id="wrap">
+
+		<div class="container">
+			<!-- body content -->
+			<div id="tab-fillin">
+				<!-- Looks like there was an error loading the homepage. Try clicking one of the tabs above or refreshing the page! -->
+				Welcome to my site. I am currently migrating to Github Pages - stay tuned!
+			</div>
+			<!-- /body content -->
+		</div><!-- /container -->
+	</div><!-- /wrap -->
+
+	<div id="footer">
+      <div class="container">
+        <p class="credit">Matt Mayer &copy; 2013</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/modal.js"></script>
+    <script src="js/shards/shards.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript">
+    	$(function() {
+    		/* Tab selection logic */
+    		$('.ajax').click(function (e) {
+              var thisTab = $(e.target) // activated tab
+              if(thisTab.is('span'))
+              {
+              	thisTab = thisTab.parent();
+              }
+              var pageTarget = "ajax/" + thisTab.attr('href').substring(1) + ".html";
+              $("#tab-fillin").load(pageTarget);
+
+              $('.tab-element').removeClass('active');
+              thisTab.parent().addClass('active');
+              $('.in').addClass('collapse');
+              $('.in').removeClass('in');
+          });
+    	});
+
+    	$(window).load(function(){
+    		$("#home-link").click();
+    	});
+    	
+    </script>
+</body>
+</html>
