@@ -1,0 +1,37 @@
+# 
+#    - 27585:2:Divining Rod III:Makes mining trivial, undermining the server economy.
+#    - 27526:*:Philosopher's Stone:Bypasses anti-grief to change blocks in protected areas without permission.
+TekkitCustomizer:
+  ProtectSurfaceFromExplosives: true
+  RemoveUUMatterToNonRenewableItemRecipes: true
+  EnforcementWorlds:
+  - world
+  - world_the_end
+  - world_nether
+  Bans:
+    OwnershipBanned:
+    - 27593:*:Void Ring:Key ingredient in an item duplication exploit.
+    - 27538:*:Watch of Flowing Time:Can be used to sabotage another player's automated processes by altering speed of components.
+    - 126:4:Red Matter Furnace:Key ingredient in an item duplication exploit.
+    - 7312:*:Tank Cart:Key ingredient in an item duplication exploit.
+    - 214:0:World Anchor:Consumes extra server memory, which may slow or crash the server.
+    - 7303:*:Anchor Cart:Consumes extra server memory, which may slow or crash the server.
+    - 213:11:Feed Station:Unattended animal breeding can result in animal overload, severely slowing the server.
+    - 127:*:Dark Matter Pedestal:Fills the server log very quickly when activated, potentially running the server out of storage allocation and causing a crash.
+    - 126:0:Energy Collector I:Converting renewable energy sources to non-renewable ores undermines the server economy.
+    - 126:1:Energy Collector II:Converting renewable energy sources to non-renewable ores undermines the server economy.
+    - 126:2:Energy Collector III:Converting renewable energy sources to non-renewable ores undermines the server economy.
+    - 223:1:Tesla Coil:May kill other players even when PvP is off.
+    - 216:*:Turtle:Programming can slow / crash the server if done improperly. Contact me if you REALLY want them.
+    - 4303:*:Teleport Pipe:Memory leak problems.
+    - 181:5:Crystal Chest:Increases server lag with no benefit
+    - 4304:*:Waterproof Teleport Pipe:Memory leak problems.
+    - 4305:*:Power Teleport Pipe:Memory leak problems.
+    - 4095:*:Dimensional Anchor:Chunk loaders may slow or crash the server.
+    - 179:*:Teleport Tether:Chunk loaders may slow or crash the server.
+    PlacementBanned: []
+    WorldBanned: []
+    CraftingBanned: []
+    UsageBanned:
+    - 27585:2:Divining Rod III:Makes mining trivial, undermining the server economy.
+    - 27526:*:Philosopher's Stone:Bypasses anti-grief to change blocks in protected areas without permission.
